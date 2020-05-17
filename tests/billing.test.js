@@ -11,3 +11,21 @@ test('Lowest tier', () => {
 
   expect(cost).toEqual(expectedCost);
 });
+
+test('Middle tier', () => {
+  const storage = chance.integer({ min: 11, max: 99 });
+
+  const cost = storage * 2 * 100;
+  const expectedCost = calculateCost(storage);
+
+  expect(cost).toEqual(expectedCost);
+});
+
+test('Highest tier', () => {
+  const storage = chance.integer({ min: 101 });
+
+  const cost = storage * 100;
+  const expectedCost = calculateCost(storage);
+
+  expect(cost).toEqual(expectedCost);
+});

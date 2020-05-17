@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "chance": "^1.1.4",
+    "serverless": "^1.71.1",
     "stripe": "^8.43.0"
   }
 }
