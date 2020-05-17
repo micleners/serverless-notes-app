@@ -18,5 +18,8 @@
     "serverless-dotenv-plugin": "^2.1.1",
     "serverless-offline": "^5.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "chance": "^1.1.4",
+    "stripe": "^8.43.0"
+  }
 }
